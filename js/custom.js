@@ -101,7 +101,7 @@ $(document).ready(function(){
 	});
 })
 
-// 8th effect custom select menu demo.html
+// 8th effect custom select menu indexball.html
 $(document).ready(function(){
 	$('#selectmenu').change(function(){
 		 $('.colors').hide();
@@ -120,5 +120,12 @@ $(document).ready(function(){
 	})
 	$('#btn7').click(function(){
 		$('#p5').val("hi Kinjal");
+	})
+})
+
+// custom loader
+$(document).ready(function(){
+	$(window).load(function(){
+		$('.loader').fadeout('slow');
 	})
 })

@@ -126,44 +126,70 @@ ul{
 /*for dropdown list*/
 /*.dropdown_content .dropdown{
   position:relative; 
-}*/
+  }*/
 
-.dropdown_content .dropdown ul{         
-  display:none;
-  list-style:none; 
-  padding:0px 0px; 
-  position:absolute; 
-  left:0px; 
-  width:auto; 
-  min-width:150px;
-  border:1px solid #d7d7d7;
-} 
+  .dropdown_content .dropdown ul{         
+    display:none;
+    list-style:none; 
+    padding:0px 0px; 
+    position:absolute; 
+    left:0px; 
+    width:auto; 
+    min-width:150px;
+    border:1px solid #d7d7d7;
+  } 
 
-.dropdown_content .selected span.value, .dropdown_content .dropdown span.value{
-  display: none;
-}
-/*list content*/
-.dropdown_content .dropdown ul li a{
-  padding:5px; 
-  display:block;
-  text-decoration:none;
-  color:#3179ac;
-}
+  .dropdown_content .selected span.value, .dropdown_content .dropdown span.value{
+    display: none;
+  }
+  /*list content*/
+  .dropdown_content .dropdown ul li a{
+    padding:5px; 
+    display:block;
+    text-decoration:none;
+    color:#3179ac;
+  }
 
-.dropdown_content .dropdown ul li a:hover{
-  background:#3179ac;
-  color:#fff;
-  transition:0.2s ease;
-}
+  .dropdown_content .dropdown ul li a:hover{
+    background:#3179ac;
+    color:#fff;
+    transition:0.2s ease;
+  }
 
-/*5th effect hide content*/
-p, button{
- margin: 10px 40px;
-}
+  /*5th effect hide content*/
+  p, button{
+   margin: 10px 40px;
+ }
 
-/*6th effect*/
-h4{
+ /*6th effect*/
+ h4{
   margin-top: 20%;
 }
 /*7th effect*/
 
+/*loade effect loader.html*/
+.loader_content{
+  height: 50%;
+  width: 50%;
+  margin: auto;
+}
+.loader{
+  height: 100%;
+  width: 200px;
+  /*position: fixed;*/
+  top: 0;
+  left: 0;
+  margin: 120px auto;
+  text-align: center;
+  background-image: url(../image/loader.png);
+  background-repeat: no-repeat;
+  animation: spin 3s linear infinite;
+}
+@keyframes spin{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
