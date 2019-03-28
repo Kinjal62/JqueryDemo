@@ -176,7 +176,6 @@ ul{
 .loader{
   height: 100%;
   width: 200px;
-  /*position: fixed;*/
   top: 0;
   left: 0;
   margin: 120px auto;
@@ -185,6 +184,17 @@ ul{
   background-repeat: no-repeat;
   animation: spin 3s linear infinite;
 }
+
+#loader{
+  position: absolute;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  content: url(../image/loader.gif);
+  margin: auto;
+}
+/*common css for loader*/
 @keyframes spin{
   0%{
     transform: rotate(0deg);
@@ -192,4 +202,22 @@ ul{
   100%{
     transform: rotate(360deg);
   }
+}
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+#myDiv{
+  display: none;
+}
+h1{
+ text-align: center;
 }
