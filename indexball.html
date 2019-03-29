@@ -1,33 +1,47 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/styleball.css">
 </head>
 <body>
 	<script type="text/javascript" src="js/custom.js"></script>
 	<!-- 3rd effect ball  moving -->
-<!-- 	<button id="circle-ball">Animate Circle</button>
-	<div class="ball"></div> -->
-
-	<!-- custom checkbox -->
 	<div class="container">
-		<input type="checkbox">
-		<input type="checkbox">
-		<input type="checkbox">
-	</div>
-	<!-- 8th effect custom select menu -->
-	<div class="button dropdown1">
-		<select id="selectmenu">
-			<option value="1">1</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-		</select>
-	</div>
-	<div class="output">
-		<div id="1" class="colors 1">Red</div>
-		<div id="2" class="colors 2">Yellow</div>
-		<div id="3" class="colors 3">Green</div>
+		<div id="myDiv" class="animate">
+			<div class="row">
+				<div class="col-md-12">
+					<button id="circle-ball">Animate Circle</button>
+					<div class="ball"></div>
+				</div>
+			</div>
+			<!-- custom checkbox -->
+			<div class="row">
+				<div class="col-md-6">
+					<div class="containers">
+						<input type="checkbox">
+						<input type="checkbox">
+						<input type="checkbox">
+					</div>
+				</div>
+				<!-- 8th effect custom select menu -->
+				<div class="col-md-6">
+					<div class="button dropdown1">
+						<select id="selectmenu">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+						</select>
+					</div>
+					<div class="output">
+						<div id="1" class="colors 1">Red</div>
+						<div id="2" class="colors 2">Yellow</div>
+						<div id="3" class="colors 3">Green</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

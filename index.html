@@ -1,6 +1,7 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -8,22 +9,38 @@
 	<script type="text/javascript" src="js/custom.js"></script>
 
 	<!-- 1st effect -->
-	<button class="button" type="button">Click Me!</button>
-	<div class="box">Hello World!</div>
-
-	<!-- 2nd effect -->
-	<div class="circle">
-		<div class="eyel"><div class="eyelid"></div></div>
-		<div class="eyer"><div class="eyelid"></div></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<button class="button" type="button">Click Me!</button>
+				<div class="box">Hello World!</div>
+			</div>
+			<!-- 9th effect set content-->
+			<div class="col-md-6">
+				<p id="p3">Paragraph 1</p>
+				<p id="p4">Paragraph 2</p>
+				<p><input type="text" id="p5" value="hello"></p>
+				<button id="btn5">Text</button>
+				<button id="btn6">HTML</button>
+				<button id="btn7">Value</button>
+			</div>
+		</div>
+		<!-- hover effect on image -->
+		<div class="row">
+			<div class="col-md-6">
+				<img src="./image/p10.jpeg" height="150px" width="200px" class="img_change">
+			</div>
+		</div>
+		<!-- 2nd effect -->
+		<div class="row">
+			<div class="col-md-6">
+				<div class="circle">
+					<div class="eyel"><div class="eyelid"></div></div>
+					<div class="eyer"><div class="eyelid"></div></div>
+				</div>
+			</div>
+		</div>
 	</div>
-
-	<!-- 9th effect set content-->
-	<p id="p3">Paragraph 1</p>
-	<p id="p4">Paragraph 2</p>
-	<p><input type="text" id="p5" value="hello"></p>
-	<button id="btn5">Text</button>
-	<button id="btn6">HTML</button>
-	<button id="btn7">Value</button>
 
 </body>
 </html>

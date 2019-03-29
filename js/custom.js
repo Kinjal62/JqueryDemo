@@ -104,9 +104,9 @@ $(document).ready(function(){
 // 8th effect custom select menu indexball.html
 $(document).ready(function(){
 	$('#selectmenu').change(function(){
-		 $('.colors').hide();
-    $('#' + $(this).val()).show();
-  });
+		$('.colors').hide();
+		$('#' + $(this).val()).show();
+	});
 });
 
 // 9th effect set content
@@ -140,3 +140,22 @@ function showPage() {
 	document.getElementById("loader").style.display = "none";
 	document.getElementById("myDiv").style.display = "block";
 }
+
+// image change on hover effect index.html
+$(document).ready(function(){
+	$('.img_change').hover(function(){
+		$(this).attr("src","./image/p4.jpeg");
+	},function(){
+		$(this).attr("src","./image/p6.jpeg")
+	})
+})
+$(document).ready(function(){
+	$('.drop_content').hover(function(){
+		$('.drop').show();
+	})
+})
+
+// background image parallax plugin
+// $(document).ready(function() {
+// 	$('.parallax-background').hover(parallaxBackground())
+// });

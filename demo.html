@@ -1,39 +1,61 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
-	<script type="text/javascript" src="js/custom.js"></script>
+<body onload="myFunction()">
+	<div id="loader"></div>
 	<!-- 4th effect dropdown -->
-	<div class="dropdown_content">	
-		<div class="selected">
-			<a href="#"><span>Select list</span></a>
-		</div>
-		<div class="dropdown">
-			<ul>
-				<li><a href="#">list 1</a></li>
-				<li><a href="#">list 2</a></li>
-				<li><a href="#">list 3</a></li>
-			</ul>
+	<div class="container">
+		<div id="myDiv" class="animate">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="dropdown_content">	
+						<div class="selected">
+							<a href="#"><span>Select list</span></a>
+						</div>
+						<div class="dropdown">
+							<ul>
+								<li><a href="#">list 1</a></li>
+								<li><a href="#">list 2</a></li>
+								<li><a href="#">list 3</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			
+			<!-- 5th effect hidde content -->
+
+				<div class="col-md-6">
+					<p id="p1">Click!!!..</p>
+					<button id="btn1">show</button>
+				</div>
+				<div class="col-md-3">
+					<p id="p2">JQuery</p>
+					<button id="btn2">slide up & down</button>
+				</div>
+				<!-- 6th effect -->
+				<div class="col-md-3">
+					<h4>Heading!!!...</h4>
+				</div>
+			</div>
+
+			<!-- 7th effect -->
+			<div class="row">
+				<div class="col-md-6">
+					<button id="btn3">Animate</button>
+					<div id="div1" style="background-color: lightblue; height: 100px; width: 100px; color: white; text-align: center; left: 10px;">Animate Division</div>
+				</div>
+				<div class="col-md-6">
+					<div id="div2" style="height:100px;width:300px;border:1px solid black;background-color:green;"><p>content</p>
+					</div>
+					<button id="btn4">Content remove</button>
+				</div>
+			</div>
 		</div>
 	</div>
-	<!-- 5th effect hidde content -->
-	<p id="p1">Click!!!..</p>
-	<p id="p2">JQuery</p>
-	<button id="btn1">show</button>
-	<button id="btn2">slide up & down</button>
-	<!-- 6th effect -->
-	<h4>Heading!!!...</h4>
-
-	<!-- 7th effect -->
-	<button id="btn3">Animate</button>
-	<div id="div1" style="background-color: lightblue; height: 100px; width: 100px; color: white; text-align: center; left: 10px;">Animate Division</div>
-	<div id="div2" style="height:100px;width:300px;border:1px solid black;background-color:green;"><p>content</p>
-	</div>
-	<button id="btn4">Content remove</button>
-
-
+	<script type="text/javascript" src="js/custom.js"></script>
 </body>
 </html>

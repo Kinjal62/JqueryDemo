@@ -3,17 +3,17 @@
   height: 100px;
   width: 100px;
   position: relative;
-  background-color: lightgreen;
+  background-color: lightgrey;
 }
 button{ 
-  background:#e74c3c;
+  background: purple;
   color:white;
   margin: 15px;
   padding: 10px;
   left: 20px;
 }
 /*custom checkbox*/
-.container{
+.containers{
   margin: 30px auto;
   width: 81px;  
 }
